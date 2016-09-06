@@ -1,0 +1,29 @@
+{
+  "find.html": {
+    "resources": [
+      "img/more1.png",
+      "js/custom.js",
+      "js/Sortable.js",
+      "css/style.css",
+      "css/box.css",
+      "js/swiper-3.3.1.min.js",
+      "css/swiper-3.3.1.min.css"
+    ],
+    "refer": []
+  },
+  "find-more.html": {
+    "resources": [
+      "img/cha.png",
+      "js/zepto.js",
+      "img/close.png",
+      "find.html",
+      "js/custom.js",
+      "js/Sortable.js",
+      "css/style.css",
+      "css/box.css"
+    ],
+    "refer": [
+      "find.html"
+    ]
+  }
+}

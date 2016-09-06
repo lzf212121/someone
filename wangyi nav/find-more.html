@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,initial-scale=1.0">
+		<title>发现-分类</title>
+		<link rel="stylesheet" href="css/box.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<style>
+			* {
+				-webkit-user-select: none;
+			}
+		</style>
+	</head>
+	<body class="ck-bg" onselectstart="return false">
+		<div id="con" class="container box box-ov">
+			<!--header-->
+			<div id="header" class=" ck-bor9 box ck-bg  box-ac box-pc ck-bor9 " style="height: 4.4rem;">
+				<div class="wh-2 box  ck-cur ck-font4 box-ac box-pc" id="title1">
+					切换栏目
+				</div>
+				<div class="box-f1 "></div>
+				<div class="wh-2 box ck-cur ck-font4 box-ac box-pc ck-clolor5" id="title2">
+					调整顺序
+				</div>
+				<div class="box tx-c" onclick="back()" id="bgpic" style="">
+					<img style="width: 35%" src="img/cha.png" />
+				</div>
+			</div>
+			<div class="ck-font3">
+				<ul class="more-list1">
+					<li class="w25 tx-c ck-fl pad1r">
+						<div class="c-d8b">
+							推荐
+						</div>
+					</li>
+					<li class="w25 tx-c ck-fl pad1r">
+						<div class="c-d8b">
+							最新
+						</div>
+					</li>
+					<li class="w25 tx-c ck-fl pad1r">
+						<div class="c-d8b">
+							热门
+						</div>
+					</li>
+					<li class="w25 tx-c ck-fl pad1r">
+						<div class="c-d8b">
+							印记
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div data-force="18" class="layer block ck-font3">
+				<ul id="" class="more-list1 ">
+					<li class="w25 tx-c ck-fl" style="padding:1.4rem ;">
+						<div class="c-d8b">
+							油画
+						</div>
+					</li>
+					<div id="bar" class="more-list"></div>
+				</ul>
+			</div>
+			<div id="more2">
+				<div class="box ck-bg10 ck-pad14 ck-mar13">
+					<div class="box-f1 ck-pad3">
+						点击添加更多栏目
+					</div>
+				</div>
+				<div class="ck-padt1  ck-font3">
+					<ul class="more-list2">
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								雕啥
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								版画
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								水墨
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								影像
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								新媒体
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								数码
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								水彩
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								丙烯
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								素描
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								书法
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								篆刻
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								装置
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								动漫
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								插画
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								金属
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								漆画
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								陶瓷
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								瓷画
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								紫砂
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								服饰
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								首饰
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								玉石
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								木艺
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								家具
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								产品造型
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								花艺
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								琉璃
+							</div><span></span>
+						</li>
+						<li class="w25 tx-c ck-fl pad1r">
+							<div class="border1">
+								其他
+							</div><span></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/zepto.js"></script>
+	<script src="js/Sortable.js"></script>
+	<script src="js/custom.js"></script>
+	
+	<script>
+		
+		var sortable = null;
+		initPage();
+		//更多栏目
+		function toggleSecond() {
+			$("#more2").toggle();
+		}
+
+		function drag() {
+			sortable = Sortable.create(bar, {
+				group : "words",
+				animation : 150,
+			});
+		};
+		function longPress(stage) {
+			toggleSecond();
+			if (stage == "start") {
+				$("#title1").html("拖动排序");
+				$("#title2").html("完成");
+				$(".more-list span").addClass("ck-pos20");
+				//删除
+				$(".more-list li span").bind("tap", function(e) {
+					changeLocal($(this).parent("li"));
+				});
+				drag();
+			} else if (stage == "end") {
+				$("#title1").html("切换栏目");
+				$("#title2").html("调整顺序");
+				$(".more-list span").removeClass("ck-pos20");
+				$(".more-list li div").unbind();
+				if (sortable)
+					sortable.destroy();
+			}
+		}
+
+		function changeLocal(liobj) {
+			if ($("#more2").css("display") == "block") {
+				liobj.unbind("tap").bind("longTap", function(e) {
+					longPress("start");
+				});
+				$(".more-list").append(liobj);
+			} else {
+				liobj.find("span").removeClass("ck-pos20")
+				$(".more-list2").append(liobj);
+			}
+		}
+
+		function initPage() {
+			var barArr1Str = getLocal("barArr1");
+			if (barArr1Str) {
+				var barArr1 = JSON.parse(barArr1Str);
+				var html1 = "";
+				for (var i = 0; i < barArr1.length; i++) {
+					html1 += '<li class="w25 tx-c ck-fl pad1r"><div class="border1">' + barArr1[i] + '</div><span></span></li>';
+				}
+				$(".more-list").html(html1);
+			}
+			var barArr2Str = getLocal("barArr2");
+			if (barArr2Str) {
+				var barArr2 = JSON.parse(barArr2Str);
+				var html2 = "";
+				for (var i = 0; i < barArr2.length; i++) {
+					html2 += '<li class="w25 tx-c ck-fl pad1r"><div class="border1">' + barArr2[i] + '</div><span></span></li>';
+				}
+				$(".more-list2").html(html2);
+			}
+			//更多
+			$(".more-list2 li").bind("click", function() {
+				changeLocal($(this));
+			});
+			//调整顺序
+			$("#title2").bind("click", function(e) {
+				if ($(this).html().trim() == "调整顺序") {
+					longPress("start");
+				} else {
+					longPress("end");
+				}
+			});
+			//长按切换
+			$(".more-list li").bind("longTap", function(e) {
+				longPress("start");
+			});
+		}
+
+		function back() {
+//			localStorage.clear();
+			//在此存储
+			var barArr1 = [];
+			var barArr2 = [];
+			$("#bar li div").each(function() {
+//				alert(3)
+				var that = $(this), that_content = that.text().trim();
+				barArr1.push(that_content);
+				setLocal("barArr1", JSON.stringify(barArr1));
+				console.log(getLocal("barArr1"))
+			});
+			$(".more-list2 li div").each(function() {
+				var that = $(this), that_content = that.text().trim();
+				barArr2.push(that_content);
+				setLocal("barArr2", JSON.stringify(barArr2));
+				console.log(getLocal("barArr2"))
+			});
+			setTimeout(function() {
+				window.location.href='find.html';
+			}, 100);
+		}
+	</script>
+</html>

@@ -1,0 +1,79 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "tab-webview-main.html": {
+    "resources": [
+      "tab-webview-subpage-about.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "tab-webview-subpage-about.html",
+      "tab-webview-subpage-setting.html",
+      "tab-webview-subpage-chat.html",
+      "tab-webview-subpage-contact.html"
+    ]
+  },
+  "tab-webview-subpage-about.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "fonts/iconfont.css",
+      "fonts/iconfont.woff",
+      "js/jquery-1.11.0.js",
+      "js/tuodong/jquery.js",
+      "js/tuodong/jquery.gridly.js",
+      "js/tuodong/sample.js",
+      "js/tuodong/jquery-ui.js",
+      "css/sample.css",
+      "js/Sortable.js",
+      "css/frozen.css",
+      "img/more1.png"
+    ],
+    "refer": []
+  },
+  "tab-webview-subpage-contact.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "tab-webview-subpage-chat.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "tanchu.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "copyone.html": {
+    "resources": [
+      "js/mui.min.js",
+      "js/zepto.min.js",
+      "js/frozen.js",
+      "css/frozen.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "js/navigator.iscroll.js",
+      "js/navigator.js",
+      "js/jquery-1.11.0.js"
+    ],
+    "refer": []
+  }
+}

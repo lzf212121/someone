@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/box.css" />
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+		<style>
+			.tab div {
+				display: inline;
+				padding: 0.3 rem;
+				width: 20%;
+				text-align: center
+			}
+			.swiper-container {
+				width: 92%;
+				margin: 0
+			}
+
+		</style>
+	</head>
+	<body class="ck-bg">
+		<div class="container box box-ov">
+			<div class="swiper-container" id="header2">
+				<div class="swiper-wrapper tab ck-pad5  ck-font4" id="tab">
+					<div class="swiper-slide  ck-clolor5 ">
+						推荐
+					</div>
+					<div class="swiper-slide">
+						最新
+					</div>
+					<div class="swiper-slide">
+						热门
+					</div>
+					<div class="swiper-slide">
+						印记
+					</div>
+					<div class="swiper-slide">
+						油画
+					</div>
+				</div>
+			</div>
+			<div class="ck-pos11 ck-wh20"id="more">
+				<div class="ck-more" ></div>
+			</div>
+			<div id="content" class="box-f1" ></div>
+		</div>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script src="js/Sortable.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/swiper-3.3.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		find();
+	})
+		var swiper = null;
+		$("#more").bind("click", function() {
+			window.location.href='find-more.html';
+		})
+		function tab2() {
+			swiper = new Swiper('.swiper-container', {
+				slidesPerView : 'auto',
+				paginationClickable : true,
+				spaceBetween : 0
+			});
+		}
+
+		function find() {
+			var barArr = getLocal("barArr1");
+			console.log(barArr);
+			if (barArr) {
+				barArr = JSON.parse(barArr);
+				var html = '<div class="swiper-slide  ck-clolor5 ">推荐</div>' + '<div class="swiper-slide">最新</div>' + '<div class="swiper-slide">热门</div>' + '<div class="swiper-slide">印记</div>' + '<div class="swiper-slide">油画</div>';
+				for (var i = 0, len = barArr.length; i < len; i++) {
+					html += '<div class="swiper-slide">' + barArr[i] + '</div>';
+				}
+				$("#tab").html(html);
+			}
+			if (swiper) {
+				swiper.update();
+			} else {
+				tab2();
+			}
+		}
+		
+	</script>
+</html>

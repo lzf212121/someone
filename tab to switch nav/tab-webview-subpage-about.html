@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">		
+		<meta name="apple--web-app-capable" content="yes">
+		<meta name="apple--web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script type="text/javascript">
+			document.getElementsByTagName('html')[0].style.fontSize=document.documentElement.clientWidth /3 +"px";
+		</script>
+		<style>
+		*{margin: 0;padding: 0;}
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.title {
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			#slidergroup .mui-slider-item {
+				width: 100%;
+				height: 1000px;
+				margin-top: 0.5rem;
+				border: 0;
+			}
+			#scrollbig {
+				width: 80%;
+				height: 0.35rem;
+				position: fixed;
+				top: 0;
+				left: 0;
+				
+			}
+			
+			#openSheet {
+				width: 18%;
+				height: 0.35rem;
+				line-height: 0.35rem;
+				display: inline-block;
+				position: fixed;
+				top: 0 ;
+				right: 0.05rem;
+				border:none;
+				text-align: center;
+				line-height: 0.08rem;
+				font-size: 0.1rem;	
+				background: #EFEFF4;			
+			}
+			#sheet1{
+				position: fixed;
+				top: 0.3rem;
+				right: 0;
+				width: 100%;
+				height: 1rem;
+				border: 1px solid #C0C0C0;
+				background: #FFFFFF;
+				display: none;
+				z-index: 9999;
+			}
+			#sheet1 a{
+				display: inline-block;
+				width: 25%;
+				height: 0.2rem;
+				-webkit-box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				float: left;
+			}			
+			.mui-nav{
+				width: 90%;
+				height: 0.3rem;
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: none;
+				font-size: 0.1rem;
+				text-align: left;
+				line-height: 0.3rem;
+			}
+			.mui-nav a{
+				color: #ACACB4;
+			}
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active
+			{
+			   border-bottom: 2px solid red;
+			}
+		   .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active
+			{
+			    color: red;
+			  
+			    background: none;
+			}	
+			.focus{
+				color: red;
+			}	
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-slider">
+				<div id="scrollbig" class=" mui-scroll-wrapper  mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-active">
+					<div class="mui-scroll">						
+						<a class="mui-control-item mui-active" href="#item1">卡1</a>
+						<a class="mui-control-item" href="#item2">卡2</a>
+						<a class="mui-control-item" href="#item3">卡3</a>
+						<a class="mui-control-item" href="#item4">卡4</a>
+						<a class="mui-control-item" href="#item5">卡5</a>
+						<a class="mui-control-item" href="#item6">卡6</a>
+						<a class="mui-control-item" href="#item7">卡7</a>
+						<a class="mui-control-item" href="#item8">卡8</a>
+						<a class="mui-control-item" href="#item9">卡9</a>
+						<a class="mui-control-item" href="#item10">卡10</a>
+						<a class="mui-control-item" href="#item11">卡11</a>
+						<a class="mui-control-item" href="#item12">卡12</a>
+						<a class="mui-control-item" href="#item13">卡13</a>
+						<a class="mui-control-item" href="#item14">卡14</a>
+						<a class="mui-control-item" href="#item15">卡15</a>						
+					</div>
+					<div class="mui-nav">全部</div>
+				</div>
+				<div id="openSheet" class="mui-btn  mui-btn-block"><span class="mui-icon mui-icon-arrowdown"></span></div>
+				<div id="sheet1">
+					<a class="mui-control-item mui-active" href="#item1">卡1</a>
+						<a class="mui-control-item" href="#item2">卡2</a>
+						<a class="mui-control-item" href="#item3">卡3</a>
+						<a class="mui-control-item" href="#item4">卡4</a>
+						<a class="mui-control-item" href="#item5">卡5</a>
+						<a class="mui-control-item" href="#item6">卡6</a>
+						<a class="mui-control-item" href="#item7">卡7</a>
+						<a class="mui-control-item" href="#item8">卡8</a>
+						<a class="mui-control-item" href="#item9">卡9</a>
+						<a class="mui-control-item" href="#item10">卡10</a>
+						<a class="mui-control-item" href="#item11">卡11</a>
+						<a class="mui-control-item" href="#item12">卡12</a>
+						<a class="mui-control-item" href="#item13">卡13</a>
+						<a class="mui-control-item" href="#item14">卡14</a>
+						<a class="mui-control-item" href="#item15">卡15</a>			
+					<!--<ul class="mui-table-view mui-grid-view mui-grid-9">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							 <a class="mui-control-item" href="#item1">卡1</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item2">卡2</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item3">卡3</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item4">卡4</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item5">卡5</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item6">卡6</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item7">卡7</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a class="mui-control-item" href="#item8">卡8</a>
+						</li>						
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item9">卡9</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item10">卡10</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item11">卡11</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item12">卡12</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item13">卡13</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item14">卡14</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a class="mui-control-item" href="#item15">卡15</a>	
+						</li>		
+					</ul>		-->
+				</div>
+				<div class="mui-slider-group" id="slidergroup">
+					<div id="item1" class="mui-slider-item mui-control-content mui-active">
+						第一个选项卡
+					</div>
+					<div id="item2" class="mui-slider-item mui-control-content " id="two">
+						第2个卡子项
+					</div>
+					<div id="item3" class="mui-slider-item mui-control-content">
+						第3个卡子项
+					</div>
+					<div id="item4" class="mui-slider-item mui-control-content">
+						第4个卡子项
+					</div>
+					<div id="item5" class="mui-slider-item mui-control-content">
+						第5个卡子项
+					</div>
+					<div id="item6" class="mui-slider-item mui-control-content">
+						第6个卡子项
+					</div>
+					<div id="item7" class="mui-slider-item mui-control-content" >
+						第7个卡子项
+					</div>
+					<div id="item8" class="mui-slider-item mui-control-content">
+						第8个卡子项
+					</div>
+					<div id="item9" class="mui-slider-item mui-control-content">
+						第9个卡子项
+					</div>
+					<div id="item10" class="mui-slider-item mui-control-content">
+						第10个卡子项
+					</div>
+					<div id="item11" class="mui-slider-item mui-control-content">
+						第11个卡子项
+					</div>
+					<div id="item12" class="mui-slider-item mui-control-content">
+						第12个卡子项
+					</div>
+					<div id="item13" class="mui-slider-item mui-control-content">
+						第13个卡子项
+					</div>
+					<div id="item14" class="mui-slider-item mui-control-content">
+						第14个卡子项
+					</div>
+					<div id="item15" class="mui-slider-item mui-control-content">
+						第15个卡子项
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>	
+	<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+	
+			});
+			/*mui('#sheet').on('tap', 'ul li', function() {
+				mui.openWindow({
+					url: 'tab-webview-subpage-chat.html'
+				})
+//			})*/
+			
+			$(function(){
+				
+				$("#openSheet").on("touchend",function(){
+				$("#sheet1").slideToggle("show");
+				$(".mui-scroll").slideToggle("hide");
+				$(".mui-nav").slideToggle("hide");				
+			});
+			
+			$("#sheet1 a").on("touchend",function(){			   
+				$("#sheet1").slideToggle("show");
+				$(".mui-nav").slideToggle("hide");
+				$(".mui-scroll").slideToggle("hide");
+				 if ($(this).hasClass('focus')) {
+		            return true;
+		        } else {
+		            $('#sheet1 a').removeClass('focus');
+		            $(this).addClass('focus');
+		        }
+			});
+			})
+			
+            var deceleration = mui.os.ios ? 0.003 : 0.0009;//阻尼系数
+			mui('.mui-scroll-wrapper').scroll({
+			bounce: false,
+			indicators: true, //是否显示滚动条
+			deceleration: deceleration
+			});
+//			function changeSubTab(ele){
+//				var controllitem=$('.mui-slider-group');
+//				var zujian=$('.mui-control-item');
+//				for(var i=0;i<zujian.length;i++){
+//					if(i==ele){
+//						mui('.mui-slider-group').slider().gotoItem(i);
+//						tag.css('margin-left','calc(100%/zujian.length*'+i+')');
+//					}
+//				}
+//			}
+//			$('.mui-slider')[0].addEventListener('slider',function(e){
+//				changeSubTab(e.detail.sliderNumber);
+//			})
+	</script>
+</html>
